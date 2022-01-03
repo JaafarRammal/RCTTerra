@@ -1,0 +1,32 @@
+{
+    "name": "react-native-terra-apple-test",
+    "version": "1.0.0",
+    "description": "A React Native package to interact with Terra's Apple HealthKit SDK",
+    "main": "index.js",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/tryterra/RCTTerra"
+    },
+    "keywords": [
+      "Apple",
+      "health-kit",
+      "healthkit",
+      "iOS",
+      "react-native",
+      "react",
+      "native",
+      "ios",
+      "terra",
+      "tryterra"
+    ],
+    "bugs": {
+      "url": "https://github.com/tryterra/RCTTerra/issues"
+    },
+    "license": "MIT",
+    "devDependencies": {
+      "react-native": ">=0.40.0"
+    },
+    "peerDependencies": {
+      "react-native": ">=0.40.0"
+    }
+  }
