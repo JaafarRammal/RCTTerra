@@ -6,9 +6,11 @@
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
 
+source = 'https://github.com/tryterra/TerraSwift'
+
 Pod::Spec.new do |s|
     s.name             = 'RCTTerra'
-    s.version          = '1.0.0'
+    s.version          = '1.0.1'
     s.summary          = 'Terra Apple SDK for react native'
   
   # This description is used to generate tags and improve search results.
@@ -33,5 +35,4 @@ Pod::Spec.new do |s|
   
     s.frameworks = ['HealthKit']
     s.dependency 'React'
-    s.dependency 'TerraSwift'
   end
