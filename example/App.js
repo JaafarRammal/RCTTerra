@@ -24,7 +24,7 @@ const App = () => {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
-  TerraApple.initApple("devid", "apikey", userID => {
+  TerraApple.initApple("devid", "apikey", true, "refID", userID => {
     console.log(userID);
     TerraApple.getAthlete();
     TerraApple.getBody(new Date("Jan 02 2022").toISOString(), new Date().toISOString());
