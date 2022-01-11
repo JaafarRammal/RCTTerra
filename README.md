@@ -32,12 +32,28 @@ import TerraApple from 'react-native-terra-apple';
 After exposing a widget session to your users, if you determine they'd like to authenticate with apple health, you can call `initApple`:
 
 ```javascript
-TerraApple.initApple("devid", "apikey", userID => {
+TerraApple.initApple("devid", "apikey", auto: true, "referenceID", userID => {
     // do something with the user id
 });
 ```
 
-By default data is sent every 8 hours to your webhook if the users open the app. Activity data is sent to your webhook whenever the user opens the app. You can also request data from the app to be sent to your webhook using getters:
+The function interface is as follow:
+
+```typescript
+initApple(
+    devId: string,
+    apiKey: string,
+    autoFetch: boolean,
+    referenceID: string,
+    callback: (userID: string) => void
+): void;
+```
+
+
+
+If `autoFetch` is set to true. data is sent every 8 hours to your webhook if the users open the app. The `referenceID` will be pushed to your webhook in the widget session responses.
+
+Activity data is sent to your webhook whenever the user opens the app. You can also request data from the app to be sent to your webhook using getters:
 
 ```typescript
 TerraApple.getBody(new Date("Jan 02 2022").toISOString(), new Date().toISOString());
@@ -48,4 +64,4 @@ TerraApple.getActivity(new Date("Jan 02 2022").toISOString(), new Date().toISOSt
 
 Note that dates are required to be passed in ISOString format.
 
-Finally, you can deauth users using the `deauth()` function.
+Finally, you can deauth users using the `deauth()` function and calling the Terra deauth API

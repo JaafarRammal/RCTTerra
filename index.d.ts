@@ -4,11 +4,15 @@ declare module "react-native-terra-apple-test" {
      * Authenticate user for linking Apple HealthKit to Terra.
      * @param devId Terra devID
      * @param apiKey Terra apiKey
+     * @param autoFetch Enable auto fetching data every 8 hours when user opens the app
+     * @param referenceID Terra reference ID pushed to the webhook for widget sessions
      * @param callback function called with userID upon completed authentication
      */
     initApple(
       devId: string,
       apiKey: string,
+      autoFetch: boolean,
+      referenceID: string,
       callback: (userID: string) => void
     ): void;
 

@@ -23,9 +23,9 @@ class TerraSwiftBridge: NSObject {
   
   // init client
   @objc
-  func initApple(_ devID: String, apiKey: String, callback: RCTResponseSenderBlock) {
-    let userID = TerraSwift.connectTerra(dev_id: devID, xAPIKey: apiKey)
-    terraClient = TerraSwift.Terra(user_id: userID, dev_id: devID, xAPIKey: apiKey)
+    func initApple(_ devID: String, apiKey: String, autoFetch: Bool, referenceID: String, callback: RCTResponseSenderBlock) {
+        let userID = TerraSwift.connectTerra(dev_id: devID, xAPIKey: apiKey, referenceId: referenceID)
+        terraClient = TerraSwift.Terra(user_id: userID, dev_id: devID, xAPIKey: apiKey, auto: autoFetch)
     callback([userID])
   }
   
