@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "TerraSwift",
+        "repositoryURL": "https://github.com/tryterra/TerraSwift.git",
+        "state": {
+          "branch": "main",
+          "revision": "8e89e9cf5c93b434606f4e1ee61e501a0cf29d83",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
