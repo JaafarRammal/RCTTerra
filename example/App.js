@@ -26,11 +26,12 @@ const App = () => {
 
   TerraApple.initApple("devid", "apikey", true, "refID", userID => {
     console.log(userID);
-    TerraApple.getAthlete();
-    TerraApple.getBody(new Date("Jan 02 2022").toISOString(), new Date().toISOString());
-    TerraApple.getDaily(new Date("Jan 02 2022").toISOString(), new Date().toISOString());
-    TerraApple.getSleep(new Date("Jan 02 2022").toISOString(), new Date().toISOString());
-    TerraApple.getActivity(new Date("Jan 02 2022").toISOString(), new Date().toISOString());
+    // TerraApple.getAthlete();
+    // TerraApple.getBody(new Date("Jan 10 2022").toISOString(), new Date().toISOString());
+    // TerraApple.getDaily(new Date("Jan 02 2022").toISOString(), new Date().toISOString());
+    // TerraApple.getSleep(new Date("Jan 02 2022").toISOString(), new Date().toISOString());
+    // TerraApple.getActivity(new Date("Jan 02 2022").toISOString(), new Date().toISOString());
+    // TerraApple.deauth()
   });
 
 

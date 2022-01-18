@@ -8,7 +8,7 @@
 #import "React/RCTBridgeModule.h"
 @interface RCT_EXTERN_REMAP_MODULE(RNTerra, TerraSwiftBridge, NSObject)
 
-RCT_EXTERN_METHOD(initApple: (NSString *)devID apiKey: (NSString *)apiKey autoFetch: (NSNumber *)autoFetch referenceID: (NSString *)referenceID callback: (RCTResponseSenderBlock)callback)
+RCT_EXTERN_METHOD(initApple: (NSString *)devID apiKey: (NSString *)apiKey autoFetch: (BOOL *)autoFetch referenceID: (NSString *)referenceID callback: (RCTResponseSenderBlock)callback)
 RCT_EXTERN_METHOD(deauth)
 RCT_EXTERN_METHOD(getAthlete)
 RCT_EXTERN_METHOD(getBody: (NSDate *)startDate endDate:(NSDate *)endDate)

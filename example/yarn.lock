@@ -5570,10 +5570,10 @@
     "jscodeshift" "^0.11.0"
     "nullthrows" "^1.1.1"
 
-"react-native-terra-apple@^1.0.2":
-  "integrity" "sha512-sLachk+Iik8T/0Uio06d7BVzg+Fbezgxvn1zFrZ5ziJOVEFigdcMKGK7eFRZLhhjr0kn7SQu6l2YAMi/P7bZ5w=="
-  "resolved" "https://registry.npmjs.org/react-native-terra-apple/-/react-native-terra-apple-1.0.2.tgz"
-  "version" "1.0.2"
+"react-native-terra-apple@^1.0.4":
+  "integrity" "sha512-jpLuQ4fCo0JmcMseWviHjEyiATfWKpyJonzRc4F9A+Bz/rYQo0nI1IUATBC2mBnbk9YOmqIyjC4gdpPhS6m+nA=="
+  "resolved" "https://registry.npmjs.org/react-native-terra-apple/-/react-native-terra-apple-1.0.4.tgz"
+  "version" "1.0.4"
 
 "react-native@*", "react-native@>=0.40.0", "react-native@0.66.4":
   "integrity" "sha512-9vx5dlSfQlKbbDtr8+xMon6qsmSu7jvjdXWZpEKh3XVKpUidbbODv7048gwVKX8YAel1egeR7hN8vzSeI6ssTw=="

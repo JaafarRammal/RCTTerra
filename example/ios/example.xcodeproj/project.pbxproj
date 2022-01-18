@@ -234,7 +234,7 @@
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			packageReferences = (
-				E53225EE278D328300A60FF4 /* XCRemoteSwiftPackageReference "TerraSwift" */,
+				E53225EE278D328300A60FF4 /* XCRemoteSwiftPackageReference "TerraSwift.git" */,
 			);
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
@@ -707,7 +707,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E53225EE278D328300A60FF4 /* XCRemoteSwiftPackageReference "TerraSwift" */ = {
+		E53225EE278D328300A60FF4 /* XCRemoteSwiftPackageReference "TerraSwift.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/tryterra/TerraSwift.git";
 			requirement = {
@@ -720,7 +720,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		E53225EF278D328300A60FF4 /* TerraSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E53225EE278D328300A60FF4 /* XCRemoteSwiftPackageReference "TerraSwift" */;
+			package = E53225EE278D328300A60FF4 /* XCRemoteSwiftPackageReference "TerraSwift.git" */;
 			productName = TerraSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
