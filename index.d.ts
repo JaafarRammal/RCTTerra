@@ -1,4 +1,4 @@
-declare module "react-native-terra-apple-test" {
+declare module "react-native-terra-apple" {
   export interface RNTerra {
     /**
      * Authenticate user for linking Apple HealthKit to Terra.
