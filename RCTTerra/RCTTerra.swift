@@ -23,10 +23,18 @@ class TerraSwiftBridge: NSObject {
   
   // init client
   @objc
-    func initApple(_ devID: String, apiKey: String, autoFetch: Bool, referenceID: String, callback: RCTResponseSenderBlock) {
-        let userID = TerraSwift.connectTerra(dev_id: devID, xAPIKey: apiKey, referenceId: referenceID)
-        terraClient = TerraSwift.Terra(user_id: userID, dev_id: devID, xAPIKey: apiKey, auto: autoFetch)
-    callback([userID])
+  func auth(_ devID: String, apiKey: String, referenceID: String, resolve: RCTPromiseResolveBlock, rejecter reject: RCTPromiseRejectBlock) {
+    guard let terraAuthResponse = TerraSwift.connectTerra(dev_id: devID, xAPIKey: apiKey, referenceId: referenceID) else {
+      reject("AUTH", "Auth failed, further debug messages avaialble in Xcode", nil)
+      return
+    }
+    print(terraAuthResponse)
+    resolve(["userID": terraAuthResponse.user_id, "referenceID": terraAuthResponse.reference_id, "status": terraAuthResponse.status])
+  }
+    
+  @objc
+  func initTerra(_ devID: String, apiKey: String, userId: String, autoFetch: Bool) {
+    terraClient = TerraSwift.Terra(user_id: userId, dev_id: devID, xAPIKey: apiKey, auto: autoFetch)
   }
   
   // deauth

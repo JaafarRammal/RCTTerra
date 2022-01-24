@@ -1,2 +1,2 @@
-const { RNTerra } = require('react-native').NativeModules
-module.exports = RNTerra
+const { RNTerraApple } = require('react-native').NativeModules
+module.exports = RNTerraApple

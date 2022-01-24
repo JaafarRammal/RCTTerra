@@ -1,19 +1,29 @@
-declare module "react-native-terra-apple" {
-  export interface RNTerra {
+declare module 'react-native-terra-apple' {
+  export interface RNTerraApple {
     /**
      * Authenticate user for linking Apple HealthKit to Terra.
      * @param devId Terra devID
      * @param apiKey Terra apiKey
-     * @param autoFetch Enable auto fetching data every 8 hours when user opens the app
      * @param referenceID Terra reference ID pushed to the webhook for widget sessions
      * @param callback function called with userID upon completed authentication
      */
-    initApple(
+    auth(
       devId: string,
       apiKey: string,
-      autoFetch: boolean,
       referenceID: string,
-      callback: (userID: string) => void
+    ): Promise<TerraAuthResponse>;
+
+    /**
+     * @param devId Terra devID
+     * @param apiKey Terra apiKey
+     * @param userId Terra userId to connect
+     * @param autoFetch Enable auto fetching data every 8 hours when user opens the app
+     */
+    initTerra(
+      devId: string,
+      apiKey: string,
+      userId: string,
+      autoFetch: boolean,
     ): void;
 
     /**
@@ -55,7 +65,13 @@ declare module "react-native-terra-apple" {
     deauth(): void;
   }
 
-  const TerraApple: RNTerra;
+  export interface TerraAuthResponse {
+    userID: string;
+    referenceID: string;
+    status: string;
+  }
+
+  const TerraApple: RNTerraApple;
 
   export default TerraApple;
 }
