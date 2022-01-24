@@ -14,8 +14,8 @@
 		5BCE82620D7B2886C2AFD021 /* libPods-example-exampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECEBC25C451FBD45D1BAC4DC /* libPods-example-exampleTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		B1DAD770E95F50BC2859A56F /* libPods-example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CB5CE272A2AB29C037769C /* libPods-example.a */; };
-		E53225F0278D328300A60FF4 /* TerraSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E53225EF278D328300A60FF4 /* TerraSwift */; };
 		E593084E27836AD9007B330D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5930848278369D7007B330D /* HealthKit.framework */; };
+		E59C844E279AFAF300C42A91 /* TerraSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E59C844D279AFAF300C42A91 /* TerraSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1DAD770E95F50BC2859A56F /* libPods-example.a in Frameworks */,
-				E53225F0278D328300A60FF4 /* TerraSwift in Frameworks */,
+				E59C844E279AFAF300C42A91 /* TerraSwift in Frameworks */,
 				E593084E27836AD9007B330D /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,7 +201,7 @@
 			);
 			name = example;
 			packageProductDependencies = (
-				E53225EF278D328300A60FF4 /* TerraSwift */,
+				E59C844D279AFAF300C42A91 /* TerraSwift */,
 			);
 			productName = example;
 			productReference = 13B07F961A680F5B00A75B9A /* example.app */;
@@ -234,7 +234,7 @@
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			packageReferences = (
-				E53225EE278D328300A60FF4 /* XCRemoteSwiftPackageReference "TerraSwift.git" */,
+				E572E8402798550E00A38112 /* XCRemoteSwiftPackageReference "TerraSwift.git" */,
 			);
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
@@ -707,7 +707,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E53225EE278D328300A60FF4 /* XCRemoteSwiftPackageReference "TerraSwift.git" */ = {
+		E572E8402798550E00A38112 /* XCRemoteSwiftPackageReference "TerraSwift.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/tryterra/TerraSwift.git";
 			requirement = {
@@ -718,9 +718,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E53225EF278D328300A60FF4 /* TerraSwift */ = {
+		E59C844D279AFAF300C42A91 /* TerraSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E53225EE278D328300A60FF4 /* XCRemoteSwiftPackageReference "TerraSwift.git" */;
+			package = E572E8402798550E00A38112 /* XCRemoteSwiftPackageReference "TerraSwift.git" */;
 			productName = TerraSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

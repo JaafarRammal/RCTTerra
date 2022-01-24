@@ -7,15 +7,10 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  StatusBar,
-  useColorScheme,
-} from 'react-native';
+import {SafeAreaView, StatusBar, useColorScheme} from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
-
-import TerraApple from 'react-native-terra-apple';
+import {FirstConnection} from './api';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -24,16 +19,7 @@ const App = () => {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
-  TerraApple.initApple("devid", "apikey", true, "refID", userID => {
-    console.log(userID);
-    // TerraApple.getAthlete();
-    // TerraApple.getBody(new Date("Jan 10 2022").toISOString(), new Date().toISOString());
-    // TerraApple.getDaily(new Date("Jan 02 2022").toISOString(), new Date().toISOString());
-    // TerraApple.getSleep(new Date("Jan 02 2022").toISOString(), new Date().toISOString());
-    // TerraApple.getActivity(new Date("Jan 02 2022").toISOString(), new Date().toISOString());
-    // TerraApple.deauth()
-  });
-
+  FirstConnection();
 
   return (
     <SafeAreaView style={backgroundStyle}>
