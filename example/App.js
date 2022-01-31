@@ -10,7 +10,7 @@ import React from 'react';
 import {SafeAreaView, StatusBar, useColorScheme} from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
-import {FirstConnection} from './api';
+import {ConnectUser, FirstConnection} from './api';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -18,8 +18,8 @@ const App = () => {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
-
-  FirstConnection();
+  ConnectUser(true);
+  // FirstConnection();
 
   return (
     <SafeAreaView style={backgroundStyle}>
