@@ -33,8 +33,8 @@ class TerraSwiftBridge: NSObject {
   }
     
   @objc
-  func initTerra(_ devID: String, apiKey: String, userId: String, autoFetch: Bool) {
-    terraClient = TerraSwift.Terra(user_id: userId, dev_id: devID, xAPIKey: apiKey, auto: autoFetch)
+  func initTerra(_ devID: String, apiKey: String, autoFetch: Bool) throws {
+    try terraClient = TerraSwift.Terra(dev_id: devID, xAPIKey: apiKey, auto: autoFetch)
   }
   
   // deauth

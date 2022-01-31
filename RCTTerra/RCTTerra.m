@@ -25,7 +25,6 @@ RCT_EXTERN_METHOD(
     initTerra:
     (NSString *)devID
     apiKey: (NSString *)apiKey
-    userId: (NSString *)userId
     autoFetch: (BOOL *)autoFetch
 )
 

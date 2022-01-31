@@ -16,13 +16,11 @@ declare module 'react-native-terra-apple' {
     /**
      * @param devId Terra devID
      * @param apiKey Terra apiKey
-     * @param userId Terra userId to connect
      * @param autoFetch Enable auto fetching data every 8 hours when user opens the app
      */
     initTerra(
       devId: string,
       apiKey: string,
-      userId: string,
       autoFetch: boolean,
     ): void;
 
