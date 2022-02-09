@@ -10,7 +10,7 @@ source = 'https://github.com/tryterra/TerraSwift'
 
 Pod::Spec.new do |s|
     s.name             = 'RCTTerra'
-    s.version          = '1.0.9'
+    s.version          = '1.0.10'
     s.summary          = 'Terra Apple SDK for react native'
   
   # This description is used to generate tags and improve search results.

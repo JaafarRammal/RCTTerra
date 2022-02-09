@@ -1,5 +1,4 @@
 node_modules
-RCTTerra.xcodeproj/xcuserdata
-RCTTerra.xcodeproj/project.xcworkspace
+RCTTerra.xcodeproj/**
 .DS_Store
 example
