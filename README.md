@@ -16,10 +16,10 @@ Then install the pod:
 cd ios && pod install && cd ..
 ```
 
-In the future, we will be supporting a pod installation of the Swift framework. For now, it has to be manually linked to the pod you just installed. Open the pod project in xcode (it should be named `{PROJECT_NAME}.xcworkspace`), and select `Add packages` to add `github.com/tryterra/TerraSwift.git`. Make sure you add it to Pods, and you select the `RCTTerra` pod as a target.
+<!-- In the future, we will be supporting a pod installation of the Swift framework. For now, it has to be manually linked to the pod you just installed. Open the pod project in xcode (it should be named `{PROJECT_NAME}.xcworkspace`), and select `Add packages` to add `github.com/tryterra/TerraSwift.git`. Make sure you add it to Pods, and you select the `RCTTerra` pod as a target.
 
 ![target1](./images/target1.png)
-![target2](./images/target2.png)
+![target2](./images/target2.png) -->
 
 ## Usage
 
