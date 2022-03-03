@@ -13,5 +13,10 @@ export function FirstConnection() {
 }
 
 export function ConnectUser(autoFetch: boolean) {
-  TerraApple.initTerra(devID, apiKey, autoFetch);
+  TerraApple.initTerra(devID, apiKey, autoFetch).then(success => {
+    console.log(success);
+    console.log(
+      'can call backfill or something now, scopes auth query completed',
+    );
+  });
 }

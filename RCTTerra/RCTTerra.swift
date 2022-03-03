@@ -33,11 +33,11 @@ class TerraSwiftBridge: NSObject {
   }
     
   @objc
-  func initTerra(_ devID: String, apiKey: String, autoFetch: Bool){
+  func initTerra(_ devID: String, apiKey: String, autoFetch: Bool, resolve: @escaping RCTPromiseResolveBlock, rejecter reject: RCTPromiseRejectBlock){
     do{
-      terraClient = try TerraSwift.Terra(dev_id: devID, xAPIKey: apiKey, auto: autoFetch)
+      terraClient = try TerraSwift.Terra(dev_id: devID, xAPIKey: apiKey, auto: autoFetch){(success: Bool) in resolve(["success": success])}
     } catch {
-      print(error)
+      reject("Init", "Init failed, further debug messages avaialble in Xcode", nil)
     }
   }
   

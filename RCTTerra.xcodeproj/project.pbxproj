@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E500135927B484B700C590FB /* TerraSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E500135827B484B700C590FB /* TerraSwift */; };
 		E593083227832CE8007B330D /* RCTTerra.m in Sources */ = {isa = PBXBuildFile; fileRef = E593083127832CE8007B330D /* RCTTerra.m */; };
 		E593083B27832D90007B330D /* RCTTerra.swift in Sources */ = {isa = PBXBuildFile; fileRef = E593083A27832D90007B330D /* RCTTerra.swift */; };
 /* End PBXBuildFile section */
@@ -36,7 +35,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E500135927B484B700C590FB /* TerraSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +84,6 @@
 			);
 			name = RCTTerra;
 			packageProductDependencies = (
-				E500135827B484B700C590FB /* TerraSwift */,
 			);
 			productName = RCTTerra;
 			productReference = E593082D27832CE8007B330D /* libRCTTerra.a */;
@@ -117,7 +114,6 @@
 			);
 			mainGroup = E593082427832CE8007B330D;
 			packageReferences = (
-				E500135727B484B700C590FB /* XCRemoteSwiftPackageReference "TerraSwift" */,
 			);
 			productRefGroup = E593082E27832CE8007B330D /* Products */;
 			projectDirPath = "";
@@ -316,25 +312,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		E500135727B484B700C590FB /* XCRemoteSwiftPackageReference "TerraSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/tryterra/TerraSwift.git";
-			requirement = {
-				kind = exactVersion;
-				version = 1.0.11;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		E500135827B484B700C590FB /* TerraSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E500135727B484B700C590FB /* XCRemoteSwiftPackageReference "TerraSwift" */;
-			productName = TerraSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E593082527832CE8007B330D /* Project object */;
 }

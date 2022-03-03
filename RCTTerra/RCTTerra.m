@@ -26,6 +26,8 @@ RCT_EXTERN_METHOD(
     (NSString *)devID
     apiKey: (NSString *)apiKey
     autoFetch: (BOOL *)autoFetch
+    resolve: (RCTPromiseResolveBlock)resolve
+    rejecter: (RCTPromiseRejectBlock)reject
 )
 
 // getters
