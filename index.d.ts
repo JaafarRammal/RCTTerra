@@ -22,7 +22,7 @@ declare module 'react-native-terra-apple' {
       devId: string,
       apiKey: string,
       autoFetch: boolean,
-    ): void;
+    ) : Promise<any>;
 
     /**
      * Send Terra Athlete data to Dev webhook

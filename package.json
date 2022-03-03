@@ -1,6 +1,6 @@
 {
   "name": "react-native-terra-apple",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "A React Native package to interact with Terra's Apple HealthKit SDK",
   "main": "index.js",
   "repository": {
