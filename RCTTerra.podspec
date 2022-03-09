@@ -10,7 +10,7 @@ source = 'https://github.com/tryterra/TerraSwift'
 
 Pod::Spec.new do |s|
     s.name             = 'RCTTerra'
-    s.version          = '1.1.3'
+    s.version          = '1.1.4'
     s.summary          = 'Terra Apple SDK for react native'
   
   # This description is used to generate tags and improve search results.
@@ -35,5 +35,5 @@ Pod::Spec.new do |s|
   
     s.frameworks = ['HealthKit']
     s.dependency "React"
-    s.dependency "TerraSwift", "= 1.1.3"
+    s.dependency "TerraSwift", "= 1.1.4"
   end
