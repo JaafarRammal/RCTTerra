@@ -34,7 +34,7 @@ class TerraSwiftBridge: NSObject {
     
   @objc
   func initTerra(_ devID: String, apiKey: String, autoFetch: Bool, resolve: @escaping RCTPromiseResolveBlock, rejecter reject: RCTPromiseRejectBlock){
-    do{
+    do {
       terraClient = try TerraSwift.Terra(dev_id: devID, xAPIKey: apiKey, auto: autoFetch){(success: Bool) in resolve(["success": success])}
     } catch {
       reject("Init", "Init failed, further debug messages avaialble in Xcode", nil)
@@ -49,24 +49,24 @@ class TerraSwiftBridge: NSObject {
   
   // data functions
   @objc
-  func getBody(_ startDate: Date, endDate: Date){
-    terraClient?.getBody(startDate: startDate, endDate: endDate)
+  func getBody(_ startDate: Date, endDate: Date, resolve: @escaping RCTPromiseResolveBlock, rejecter reject: RCTPromiseRejectBlock){
+    terraClient?.getBody(startDate: startDate, endDate: endDate){(success: Bool) in resolve(["success": success])}
   }
   @objc
-  func getDaily(_ startDate: Date, endDate: Date){
-    terraClient?.getDaily(startDate: startDate, endDate: endDate)
+  func getDaily(_ startDate: Date, endDate: Date, resolve: @escaping RCTPromiseResolveBlock, rejecter reject: RCTPromiseRejectBlock){
+    terraClient?.getDaily(startDate: startDate, endDate: endDate){(success: Bool) in resolve(["success": success])}
   }
   @objc
-  func getSleep(_ startDate: Date, endDate: Date){
-    terraClient?.getSleep(startDate: startDate, endDate: endDate)
+  func getSleep(_ startDate: Date, endDate: Date, resolve: @escaping RCTPromiseResolveBlock, rejecter reject: RCTPromiseRejectBlock){
+    terraClient?.getSleep(startDate: startDate, endDate: endDate){(success: Bool) in resolve(["success": success])}
   }
   @objc
-  func getActivity(_ startDate: Date, endDate: Date){
-    terraClient?.getWorkout(startDate: startDate, endDate: endDate)
+  func getActivity(_ startDate: Date, endDate: Date, resolve: @escaping RCTPromiseResolveBlock, rejecter reject: RCTPromiseRejectBlock){
+    terraClient?.getWorkout(startDate: startDate, endDate: endDate){(success: Bool) in resolve(["success": success])}
   }
   @objc
-  func getAthlete(){
-    terraClient?.getAthlete()
+  func getAthlete(resolve: @escaping RCTPromiseResolveBlock, rejecter reject: RCTPromiseRejectBlock){
+    terraClient?.getAthlete(){(success: Bool) in resolve(["success": success])}
   }
   
 }

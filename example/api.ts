@@ -13,10 +13,18 @@ export function FirstConnection() {
 }
 
 export function ConnectUser(autoFetch: boolean) {
+  console.log('connecting');
   TerraApple.initTerra(devID, apiKey, autoFetch).then(success => {
     console.log(success);
-    console.log(
-      'can call backfill or something now, scopes auth query completed',
-    );
+    TerraApple.getDaily(
+      new Date('2021-01-11').toISOString(),
+      new Date().toISOString(),
+    ).then(s => {
+      console.log(s);
+    });
+    // TerraApple.getBody(
+    //   new Date('2022-01-01').toISOString(),
+    //   new Date('2022-01-10').toISOString(),
+    // );
   });
 }

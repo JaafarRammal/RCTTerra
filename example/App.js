@@ -19,7 +19,7 @@ const App = () => {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
   ConnectUser(true);
-  // FirstConnection();
+  FirstConnection();
 
   return (
     <SafeAreaView style={backgroundStyle}>

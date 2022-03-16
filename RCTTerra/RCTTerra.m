@@ -31,11 +31,34 @@ RCT_EXTERN_METHOD(
 )
 
 // getters
-RCT_EXTERN_METHOD(getAthlete)
-RCT_EXTERN_METHOD(getBody: (NSDate *)startDate endDate:(NSDate *)endDate)
-RCT_EXTERN_METHOD(getDaily: (NSDate *)startDate endDate:(NSDate *)endDate)
-RCT_EXTERN_METHOD(getSleep: (NSDate *)startDate endDate:(NSDate *)endDate)
-RCT_EXTERN_METHOD(getActivity: (NSDate *)startDate endDate:(NSDate *)endDate)
+RCT_EXTERN_METHOD(
+    getAthlete: (RCTPromiseResolveBlock)resolve
+    rejecter: (RCTPromiseRejectBlock)reject
+)
+RCT_EXTERN_METHOD(
+    getBody: (NSDate *)startDate
+    endDate:(NSDate *)endDate
+    resolve: (RCTPromiseResolveBlock)resolve
+    rejecter: (RCTPromiseRejectBlock)reject
+)
+RCT_EXTERN_METHOD(
+    getDaily: (NSDate *)startDate
+    endDate:(NSDate *)endDate
+    resolve: (RCTPromiseResolveBlock)resolve
+    rejecter: (RCTPromiseRejectBlock)reject
+)
+RCT_EXTERN_METHOD(
+    getSleep: (NSDate *)startDate
+    endDate:(NSDate *)endDate
+    resolve: (RCTPromiseResolveBlock)resolve
+    rejecter: (RCTPromiseRejectBlock)reject
+)
+RCT_EXTERN_METHOD(
+    getActivity: (NSDate *)startDate
+    endDate:(NSDate *)endDate
+    resolve: (RCTPromiseResolveBlock)resolve
+    rejecter: (RCTPromiseRejectBlock)reject
+)
 
 @end
 
