@@ -66,6 +66,10 @@ TerraApple.getActivity(
   new Date("Jan 02 2022").toISOString(),
   new Date().toISOString()
 );
+TerraApple.getNutrition(
+  new Date("Jan 02 2022").toISOString(),
+  new Date().toISOString()
+);
 ```
 
 Note that dates are required to be passed in ISOString format.

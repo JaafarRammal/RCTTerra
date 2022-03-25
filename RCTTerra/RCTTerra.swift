@@ -65,6 +65,10 @@ class TerraSwiftBridge: NSObject {
     terraClient?.getWorkout(startDate: startDate, endDate: endDate){(success: Bool) in resolve(["success": success])}
   }
   @objc
+  func getNutrition(_ startDate: Date, endDate: Date, resolve: @escaping RCTPromiseResolveBlock, rejecter reject: RCTPromiseRejectBlock){
+    terraClient?.getNutrition(startDate: startDate, endDate: endDate){(success: Bool) in resolve(["success": success])}
+  }
+  @objc
   func getAthlete(resolve: @escaping RCTPromiseResolveBlock, rejecter reject: RCTPromiseRejectBlock){
     terraClient?.getAthlete(){(success: Bool) in resolve(["success": success])}
   }

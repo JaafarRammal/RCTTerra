@@ -53,6 +53,13 @@ declare module "react-native-terra-apple" {
     getSleep(startDate: string, endDate: string): Promise<any>;
 
     /**
+     * Send Terra Nutrition data to Dev webhook
+     * @param startDate start date in ISOString format
+     * @param endDate end date in ISOString format
+     */
+    getNutrition(startDate: string, endDate: string): Promise<any>;
+
+    /**
      * Deauth user from Terra service
      */
     deauth(): void;

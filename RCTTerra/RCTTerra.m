@@ -59,6 +59,12 @@ RCT_EXTERN_METHOD(
     resolve: (RCTPromiseResolveBlock)resolve
     rejecter: (RCTPromiseRejectBlock)reject
 )
+RCT_EXTERN_METHOD(
+    getNutrition: (NSDate *)startDate
+    endDate:(NSDate *)endDate
+    resolve: (RCTPromiseResolveBlock)resolve
+    rejecter: (RCTPromiseRejectBlock)reject
+)
 
 @end
 
