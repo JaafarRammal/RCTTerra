@@ -1,6 +1,9 @@
 # Terra React Native Apple Healthkit
 
-This package bundles a bridge and an interface to interact with Terra's Apple SDK. This enables developers to build a react native application and connect user's Apple Healthkit to the Terra ecosystem.
+## DEPRECATED WITH TERRA-SWIFT. PLEASE TRANSITION TO [terra-react](https://github.com/tryterra/terra-react). THE PACKAGE WILL STILL BE SUPPORTED, BUT WILL NOT SEE ANY MORE UPDATES.
+
+
+This package bundles a bridge and an interface to interact with Terra's Apple SDK [TerraSwift](https://github.com/tryterra/TerraSwift). This enables developers to build a react native application and connect user's Apple Healthkit to the Terra ecosystem.
 
 ## Setup
 
